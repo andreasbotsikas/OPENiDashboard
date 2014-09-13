@@ -978,6 +978,7 @@
     <Content Include="scripts\raphael.js" />
     <Content Include="templates\account.html" />
     <Content Include="templates\Dashboard.html" />
+    <Content Include="templates\Media.html" />
     <Folder Include="merges\ios\" />
     <Folder Include="merges\wp8\" />
     <Folder Include="res\icons\android\" />
@@ -1040,6 +1041,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="App\Controllers\Account.ts" />
     <TypeScriptCompile Include="App\Controllers\Dashboard.ts" />
+    <TypeScriptCompile Include="App\Controllers\Media.ts" />
     <TypeScriptCompile Include="App\Controllers\RootController.ts" />
     <TypeScriptCompile Include="App\Startup.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />

@@ -7,8 +7,10 @@
     <!-- bootstrap 3.0.2 -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" />
     <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <!-- Morris chart -->
@@ -83,15 +85,6 @@
                             <span>{{root.username}} <i class="caret"></i></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <!-- Menu Body -->
-                            <li class="user-body">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#/account">Followers</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#/account">Friends</a>
-                                </div>
-                            </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
@@ -133,7 +126,7 @@
                         <a href="#/account"><i class="fa fa-user"></i> <span>Account</span></a>
                     </li>
                     <li class="treeview">
-                        <a>
+                        <a href="#/media">
                             <i class="fa fa-jsfiddle"></i>
                             <span>Social media</span>
                             <i class="fa fa-angle-left pull-right"></i>
@@ -204,5 +197,6 @@
     <script src="App/Controllers/RootController.js"></script>
     <script src="App/Controllers/Account.js"></script>
     <script src="App/Controllers/Dashboard.js"></script>
+    <script src="App/Controllers/Media.js"></script>
 </body>
 </html>

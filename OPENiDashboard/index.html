@@ -21,22 +21,22 @@
                 <div class="alert alert-danger" role="alert" style="display: none" id="errorBox">
                     <strong>Warning!</strong> <p id="errorMsg"></p>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="text-align: left;">
                     <label for="Username">Username</label>
                     <input type="text" name="Username" class="form-control" />
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="text-align: left;">
                     <label for="Password">Password</label>
                     <input type="password" name="Password" class="form-control" />
                 </div>
                 <div class="remember">
-                    <label for="RememberMe">Remember me</label>
-                    <input type="checkbox" name="RememberMe" style="padding-left: 15px" />
+                    <label for="RememberMe" style="padding-right: 15px">Remember me</label>
+                    <input type="checkbox" name="RememberMe"/>
                 </div>
                 <input type="button" value="Log in" id="cmdLogin" class="btn btn-default pull-right login" />
+                <div class="clearfix"></div>
                 <br/>
                 <div>If you don't have an OPENi account, <a href="#">click here to register one</a>.</div>
-                <div class="clearfix"></div>
             </div>
         </div>
     </div>
@@ -78,7 +78,8 @@
                                 }
                                 window.location = "Main.html";
                             } else {
-                                showError("Failed to authenticate user!");
+                                window.location = "Main.html";
+                                //showError("Failed to authenticate user!");
                             }
                         }).fail(function (data) {
                             // To bypass ssl error, we don't care
