@@ -976,9 +976,10 @@
     <Content Include="scripts\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="scripts\raphael-min.js" />
     <Content Include="scripts\raphael.js" />
+    <Content Include="templates\account.html" />
+    <Content Include="templates\Dashboard.html" />
     <Folder Include="merges\ios\" />
     <Folder Include="merges\wp8\" />
-    <Folder Include="templates\" />
     <Folder Include="res\icons\android\" />
     <Folder Include="res\icons\ios\" />
     <Folder Include="res\icons\wp8\" />
@@ -1037,6 +1038,8 @@
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\Controllers\Account.ts" />
+    <TypeScriptCompile Include="App\Controllers\Dashboard.ts" />
     <TypeScriptCompile Include="App\Controllers\RootController.ts" />
     <TypeScriptCompile Include="App\Startup.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />

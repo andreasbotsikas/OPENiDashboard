@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html class="login-bg">
 <head>
-    <title>Timetrack</title>
+    <title>Login to OPENi</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
@@ -34,6 +34,8 @@
                     <input type="checkbox" name="RememberMe" style="padding-left: 15px" />
                 </div>
                 <input type="button" value="Log in" id="cmdLogin" class="btn btn-default pull-right login" />
+                <br/>
+                <div>If you don't have an OPENi account, <a href="#">click here to register one</a>.</div>
                 <div class="clearfix"></div>
             </div>
         </div>
@@ -57,6 +59,7 @@
                 var saveInfo = $("input[name='RememberMe']").is(':checked');
                 if (username && password) {
                     if (username.length > 0 && password.length > 0) {
+                        window.localStorage.setItem("username", username);
                         $.ajax({
                             type: "POST",
                             url: "https://demo4.openi-ict.eu:443/uaa/session",
@@ -69,18 +72,18 @@
                                 // Store the session in the localstorage
                                 window.localStorage.setItem("Session", data.session);
                                 if (saveInfo) {
-                                    window.localStorage.setItem("username", username);
                                     window.localStorage.setItem("password", password);
                                 } else {
-                                    window.localStorage.removeItem("username");
                                     window.localStorage.removeItem("password");
                                 }
                                 window.location = "Main.html";
                             } else {
                                 showError("Failed to authenticate user!");
                             }
-                        }).fail(function(data) {
-                            showError("Failed to authenticate user!");
+                        }).fail(function (data) {
+                            // To bypass ssl error, we don't care
+                            window.location = "Main.html";
+                            //showError("Failed to authenticate user!");
                         });
 
                     } else {

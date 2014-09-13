@@ -4,7 +4,7 @@
     registerRoute: function(path, route) {
         App.routes[path] = route;
     },
-    root: null // The root controller
+    root: null// The root controller
 };
 App.mod.config(['$routeProvider', '$httpProvider', '$locationProvider', function ($routeProvider, $httpProvider, $locationProvider) {
     for (var path in App.routes) {
