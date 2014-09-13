@@ -268,6 +268,7 @@
     <Content Include="css\jQueryUI\jquery-ui-1.10.3.custom.css" />
     <Content Include="css\jQueryUI\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="css\jvectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="css\Login.css" />
     <Content Include="css\morris\morris.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.css" />
     <Content Include="css\timepicker\bootstrap-timepicker.min.css" />
@@ -285,7 +286,7 @@
     <Content Include="fonts\ionicons.ttf" />
     <Content Include="fonts\ionicons.woff" />
     <Content Include="images\ajax-loader1.gif" />
-    <Content Include="images\blur-background09.jpg" />
+    <Content Include="images\bckround.png" />
     <Content Include="images\bootstrap-colorpicker\alpha-horizontal.png" />
     <Content Include="images\bootstrap-colorpicker\alpha.png" />
     <Content Include="images\bootstrap-colorpicker\hue-horizontal.png" />
@@ -293,6 +294,7 @@
     <Content Include="images\bootstrap-colorpicker\saturation.png" />
     <Content Include="images\sprite-skin-flat.png" />
     <Content Include="images\sprite-skin-nice.png" />
+    <Content Include="Index.html" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Content Include="merges\windows8\scripts\platformOverrides.js" />
@@ -990,7 +992,7 @@
     <Content Include="config.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="index.html" />
+    <Content Include="Main.html" />
     <Content Include="css\index.css" />
     <Content Include="res\cert\android\ant.properties" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
@@ -1033,6 +1035,19 @@
     <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
     <Content Include="res\screens\windows8\splashscreen.png" />
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="App\Controllers\RootController.ts" />
+    <TypeScriptCompile Include="App\Startup.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-scenario.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
